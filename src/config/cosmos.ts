@@ -4,7 +4,7 @@ export const CosmosConfig: NamespaceConfig = {
   'cosmoshub-3': {
     name: 'Cosmos Hub',
     chainId: 'cosmos:cosmoshub-3',
-    rpcUrl: 'stargate.cosmos.network',
+    rpcUrl: 'rpc.cosmos.network',
     derivationPath: "m/44'/118'/0'/0",
     nativeAsset: {
       symbol: 'ATOM',
