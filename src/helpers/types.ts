@@ -1,6 +1,3 @@
-import { IJsonRpcSigner } from 'rpc-json-signer';
-import { IJsonRpcAuthenticator } from 'rpc-json-auth';
-
 export interface AssetMetadata {
   symbol: string;
   name: string;
@@ -14,10 +11,6 @@ export interface ChainConfig {
   derivationPath: string;
   nativeAsset: AssetMetadata;
 }
-
-export type ChainSigner = IJsonRpcSigner;
-
-export type ChainAuthenticator = IJsonRpcAuthenticator;
 
 export interface NamespaceConfig {
   [reference: string]: ChainConfig;

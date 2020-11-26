@@ -1,6 +1,6 @@
 {
   "name": "caip-api",
-  "description": "CAIP Blockchain API and JSON-RPC Signers",
+  "description": "CAIP Blockchain API and JSON-RPC Config",
   "version": "1.0.0",
   "author": "Pedro Gomes <github.com/pedrouid>",
   "license": "MIT",
@@ -8,13 +8,10 @@
     "blockchain",
     "json-rpc",
     "jsonrpc",
-    "signer",
-    "authenticator",
     "api",
     "rpc",
     "caip",
-    "chain",
-    "cryptocurrency"
+    "chain"
   ],
   "files": [
     "dist"
@@ -64,9 +61,7 @@
   "dependencies": {
     "axios": "^0.21.0",
     "caip": "^0.9.2",
-    "mnemonic-keyring": "^1.1.0",
     "rpc-json-auth": "^0.2.1",
-    "rpc-json-signer": "^1.0.0",
     "rpc-json-utils": "^1.1.4"
   }
 }
