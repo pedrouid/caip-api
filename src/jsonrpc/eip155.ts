@@ -1,10 +1,6 @@
 import { JsonRpcConfig } from '@json-rpc-tools/utils';
 
 export const EIP155JsonRpc: JsonRpcConfig = {
-  context: 'eip155',
-  accounts: {
-    method: 'eth_accounts',
-  },
   methods: {
     eth_accounts: {
       name: 'eth_accounts',

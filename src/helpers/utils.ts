@@ -1,7 +1,16 @@
 import { ChainID } from 'caip';
 
 import * as blockchain from '../';
-import { ChainConfig, SupportedChains } from './types';
+import { ChainConfig, ChainJsonRpc, SupportedChains } from './types';
+
+export function getChainJsonRpc(chainId: string): ChainJsonRpc {
+  const { namespace } = ChainID.parse(chainId);
+  const jsonrpc = blockchain.config[namespace];
+  if (!jsonrpc) {
+    throw new Error(`Invalid or unsupported chainId: ${chainId}`);
+  }
+  return jsonrpc;
+}
 
 export function getChainConfig(chainId: string): ChainConfig {
   const { namespace, reference } = ChainID.parse(chainId);

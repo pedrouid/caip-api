@@ -1,3 +1,5 @@
+import { JsonRpcConfig } from '@json-rpc-tools/utils';
+
 export interface AssetMetadata {
   symbol: string;
   name: string;
@@ -11,6 +13,8 @@ export interface ChainConfig {
   derivationPath: string;
   nativeAsset: AssetMetadata;
 }
+
+export type ChainJsonRpc = JsonRpcConfig;
 
 export interface NamespaceConfig {
   [reference: string]: ChainConfig;
