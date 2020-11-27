@@ -1,6 +1,6 @@
-import { JsonRpcAuthenticatorConfig } from 'rpc-json-auth';
+import { JsonRpcConfig } from '@json-rpc-tools/utils';
 
-export const EIP155JsonRpc: JsonRpcAuthenticatorConfig = {
+export const EIP155JsonRpc: JsonRpcConfig = {
   context: 'eip155',
   methods: {},
 };

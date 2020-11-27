@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import { JsonRpcRequest, payloadId } from 'rpc-json-utils';
+import { formatJsonRpcRequest, JsonRpcRequest } from '@json-rpc-tools/utils';
 
 import { api } from './shared';
 
@@ -15,12 +15,8 @@ export const apiSendTransaction = async (
     throw new Error('Invalid or missing rpc url');
   }
 
-  const response = await Axios.post(rpcUrl, {
-    jsonrpc: '2.0',
-    id: payloadId(),
-    method: 'eth_sendTransaction',
-    params: [txParams],
-  });
+  const request = formatJsonRpcRequest('eth_sendTransaction', [txParams]);
+  const response = await Axios.post(rpcUrl, request);
 
   const result = response.data.result;
   return result;

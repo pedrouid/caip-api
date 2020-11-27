@@ -1,6 +1,6 @@
-import { JsonRpcAuthenticatorConfig } from 'rpc-json-auth';
+import { JsonRpcConfig } from '@json-rpc-tools/utils';
 
-export const PolkadotJsonRpc: JsonRpcAuthenticatorConfig = {
+export const PolkadotJsonRpc: JsonRpcConfig = {
   context: 'polkadot',
   methods: {},
 };
