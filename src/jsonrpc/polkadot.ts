@@ -1,5 +1,5 @@
-import { JsonRpcConfig } from '@json-rpc-tools/utils';
+import { JsonRpcSchemas } from '@json-rpc-tools/utils';
 
-export const PolkadotJsonRpc: JsonRpcConfig = {
-  methods: {},
+export const PolkadotJsonRpc: JsonRpcSchemas = {
+  schemas: {},
 };

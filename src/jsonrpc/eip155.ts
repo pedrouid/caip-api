@@ -1,7 +1,7 @@
-import { JsonRpcConfig } from '@json-rpc-tools/utils';
+import { JsonRpcSchemas } from '@json-rpc-tools/utils';
 
-export const EIP155JsonRpc: JsonRpcConfig = {
-  methods: {
+export const EIP155JsonRpc: JsonRpcSchemas = {
+  schemas: {
     eth_accounts: {
       name: 'eth_accounts',
       description: 'Get account addresses',
@@ -48,7 +48,6 @@ export const EIP155JsonRpc: JsonRpcConfig = {
       result: {
         type: 'string',
       },
-      userApproval: true,
     },
     personal_sign: {
       name: 'personal_sign',
@@ -62,7 +61,6 @@ export const EIP155JsonRpc: JsonRpcConfig = {
       result: {
         type: 'string',
       },
-      userApproval: true,
     },
     eth_signTypedData: {
       name: 'eth_signTypedData',
@@ -76,7 +74,6 @@ export const EIP155JsonRpc: JsonRpcConfig = {
       result: {
         type: 'string',
       },
-      userApproval: true,
     },
   },
 };
