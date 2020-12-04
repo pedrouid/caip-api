@@ -1,9 +1,10 @@
+import { BlockchainJsonRpcConfig } from '@json-rpc-tools/utils';
 import { ChainID } from 'caip';
 
 import * as blockchain from '../';
-import { ChainConfig, ChainJsonRpc, SupportedChains } from './types';
+import { ChainConfig, SupportedChains } from './types';
 
-export function getChainJsonRpc(chainId: string): ChainJsonRpc {
+export function getChainJsonRpc(chainId: string): BlockchainJsonRpcConfig {
   const { namespace } = ChainID.parse(chainId);
   const jsonrpc = blockchain.config[namespace];
   if (!jsonrpc) {

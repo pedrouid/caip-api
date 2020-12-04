@@ -14,8 +14,6 @@ export interface ChainConfig {
   nativeAsset: AssetMetadata;
 }
 
-export type ChainJsonRpc = JsonRpcSchemas;
-
 export interface NamespaceConfig {
   [reference: string]: ChainConfig;
 }
