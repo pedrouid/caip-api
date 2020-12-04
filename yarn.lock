@@ -1007,17 +1007,17 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@json-rpc-tools/types@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.2.2.tgz#17bc07a8b020decbaaa4458d49e9d55642dc04dc"
-  integrity sha512-tWmVN48jTLJ3lbNaYRkhYtsnWjIULgKnP4pgPNlcDKU6jo0mAmcRCD9Tin+WBf/qvjq15/4OQcIVYOPcUmZ2DA==
+"@json-rpc-tools/types@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.2.3.tgz#11104e6acb442ffe74b7264c865bd7e867118844"
+  integrity sha512-XhReMukwL1FM1ouKj3WywtejIEt9TomFo8v4Hug86s0Cuedr8E7QUKTCfA1PEnRoKsRGSfIZhGTe1ElbRznFBg==
 
-"@json-rpc-tools/utils@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@json-rpc-tools/utils/-/utils-1.2.2.tgz#c88fbad0ed231c33643ac143986bddf0f952229b"
-  integrity sha512-Jfp0oQFR4VFjl7nQIGwh98ShUL6XlosLcb+n9UiLbRUTBOs72qvROTWCk0KKNj06UniujgaFYOOIBKkkOQU7aw==
+"@json-rpc-tools/utils@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@json-rpc-tools/utils/-/utils-1.2.3.tgz#643e4bf891495b35e9286658cf0c01bf7fa4c44f"
+  integrity sha512-HOMCYX7+GZqICtEB2U3dl2euIzWxu9tMxB1rf4iS9nHQFEch1hYHvqmAj6ai8GakWJF0rMcsFaotp1/YdIASDQ==
   dependencies:
-    "@json-rpc-tools/types" "^1.2.2"
+    "@json-rpc-tools/types" "^1.2.3"
 
 "@rollup/plugin-commonjs@^11.0.0":
   version "11.1.0"
@@ -1716,13 +1716,6 @@ axe-core@^4.0.2:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.1.1.tgz#70a7855888e287f7add66002211a423937063eaf"
   integrity sha512-5Kgy8Cz6LPC9DJcNb3yjAXTu3XihQgEdnIg50c//zOC/MyLP0Clg+Y8Sh9ZjjnvBrDZU4DgXS9C3T9r4/scGZQ==
-
-axios@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
-  integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
-  dependencies:
-    follow-redirects "^1.10.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -3485,11 +3478,6 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
-
-follow-redirects@^1.10.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
-  integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
 for-in@^1.0.2:
   version "1.0.2"

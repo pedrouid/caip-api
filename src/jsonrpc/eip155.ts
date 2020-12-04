@@ -1,6 +1,10 @@
-import { JsonRpcSchemas } from '@json-rpc-tools/utils';
+import { BlockchainJsonRpcConfig } from '@json-rpc-tools/utils';
 
-export const EIP155JsonRpc: JsonRpcSchemas = {
+export const EIP155JsonRpc: BlockchainJsonRpcConfig = {
+  state: {
+    chainId: 'eth_chainId',
+    accounts: 'eth_accounts',
+  },
   schemas: {
     eth_accounts: {
       name: 'eth_accounts',

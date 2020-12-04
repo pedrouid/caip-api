@@ -1,5 +1,9 @@
-import { JsonRpcSchemas } from '@json-rpc-tools/utils';
+import { BlockchainJsonRpcConfig } from '@json-rpc-tools/utils';
 
-export const CosmosJsonRpc: JsonRpcSchemas = {
+export const CosmosJsonRpc: BlockchainJsonRpcConfig = {
+  state: {
+    chainId: '',
+    accounts: '',
+  },
   schemas: {},
 };
