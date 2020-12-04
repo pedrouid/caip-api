@@ -1,5 +1,3 @@
-import { JsonRpcSchemas } from '@json-rpc-tools/utils';
-
 export interface AssetMetadata {
   symbol: string;
   name: string;
