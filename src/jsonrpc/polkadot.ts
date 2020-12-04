@@ -1,6 +1,6 @@
-import { BlockchainJsonRpcConfig } from '@json-rpc-tools/utils';
+import { ChainJsonRpc } from '../helpers';
 
-export const PolkadotJsonRpc: BlockchainJsonRpcConfig = {
+export const PolkadotJsonRpc: ChainJsonRpc = {
   state: {
     chainId: '',
     accounts: '',

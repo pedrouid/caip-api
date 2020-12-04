@@ -1007,17 +1007,17 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@json-rpc-tools/types@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.2.3.tgz#11104e6acb442ffe74b7264c865bd7e867118844"
-  integrity sha512-XhReMukwL1FM1ouKj3WywtejIEt9TomFo8v4Hug86s0Cuedr8E7QUKTCfA1PEnRoKsRGSfIZhGTe1ElbRznFBg==
+"@json-rpc-tools/types@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.3.0.tgz#bba2f029217221a4329d321a391ef89e7f6bf044"
+  integrity sha512-5ok3vdT0voXJlvCItPvP+KKuoE+BAWiI9/bisJ3hHtGQb79l/mriOoXw3ITOm6QX4GhKtV+957g94pNd3guJfA==
 
-"@json-rpc-tools/utils@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@json-rpc-tools/utils/-/utils-1.2.3.tgz#643e4bf891495b35e9286658cf0c01bf7fa4c44f"
-  integrity sha512-HOMCYX7+GZqICtEB2U3dl2euIzWxu9tMxB1rf4iS9nHQFEch1hYHvqmAj6ai8GakWJF0rMcsFaotp1/YdIASDQ==
+"@json-rpc-tools/utils@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@json-rpc-tools/utils/-/utils-1.3.0.tgz#577fd514c014cddf1cff77526ec40579d1dc8563"
+  integrity sha512-cWCfEYT6/8lGSn0b2J4ipMPFIbsmpk0ZHQK84hDMfc6Xvz4xc/aFFRJN0VFTEaPKgyFw5o4TKzIaDBE+UOkEKQ==
   dependencies:
-    "@json-rpc-tools/types" "^1.2.3"
+    "@json-rpc-tools/types" "^1.3.0"
 
 "@rollup/plugin-commonjs@^11.0.0":
   version "11.1.0"
