@@ -1,6 +1,16 @@
 import { ChainJsonRpc } from '../helpers';
 
 export const EIP155JsonRpc: ChainJsonRpc = {
+  routes: {
+    http: ['eth_*'],
+    signer: [
+      'eth_sendTransaction',
+      'eth_signTransaction',
+      'eth_sign',
+      'eth_signTypedData',
+      'personal_sign',
+    ],
+  },
   state: {
     chainId: 'eth_chainId',
     accounts: 'eth_accounts',
