@@ -1,29 +1,44 @@
 import { ChainID } from 'caip';
 
 import * as blockchain from '../';
-import { ChainConfig, ChainJsonRpc, SupportedChains } from './types';
+import {
+  ChainConfig,
+  ChainJsonRpc,
+  NamespaceConfig,
+  SupportedChains,
+} from './types';
+
+export function getNamespaceProperty<T = any>(
+  chainId: string,
+  property: string
+): T {
+  const { namespace } = ChainID.parse(chainId);
+  const res = blockchain[property][namespace];
+  if (!res) {
+    throw new Error(`Missing ${property} for chainId: ${chainId}`);
+  }
+  return res;
+}
 
 export function getChainJsonRpc(chainId: string): ChainJsonRpc {
-  const { namespace } = ChainID.parse(chainId);
-  const jsonrpc = blockchain.config[namespace];
-  if (!jsonrpc) {
-    throw new Error(`Invalid or unsupported chainId: ${chainId}`);
-  }
-  return jsonrpc;
+  return getNamespaceProperty<ChainJsonRpc>(chainId, 'jsonrpc');
 }
 
 export function getChainConfig(chainId: string): ChainConfig {
-  const { namespace, reference } = ChainID.parse(chainId);
-  const chain = blockchain.config[namespace][reference];
+  const namespace = getNamespaceProperty<NamespaceConfig>(chainId, 'config');
+  const { reference } = ChainID.parse(chainId);
+  const chain = namespace[reference];
   if (!chain) {
-    throw new Error(`Invalid or unsupported chainId: ${chainId}`);
+    throw new Error(`Missing chain for chainId: ${chainId}`);
   }
   return chain;
 }
 
-export function getSupportedChains(): SupportedChains {
+export function getSupportedChains(targetNamespace?: string): SupportedChains {
   const chains: SupportedChains = {};
   Object.keys(blockchain.config).forEach((namespace: string) => {
+    if (typeof targetNamespace !== 'undefined' && namespace !== targetNamespace)
+      return;
     Object.keys(blockchain.config[namespace]).forEach((reference: string) => {
       const chainId = ChainID.format({ namespace, reference });
       chains[chainId] = getChainConfig(chainId);
