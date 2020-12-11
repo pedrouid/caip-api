@@ -5,8 +5,9 @@ export const PolkadotJsonRpc: ChainJsonRpc = {
     http: [],
     signer: [],
   },
-  auth: {
-    requiredApproval: [],
+  wallet: {
+    accounts: '',
+    auth: [],
   },
   schemas: {},
 };

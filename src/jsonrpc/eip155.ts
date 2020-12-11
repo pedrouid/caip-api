@@ -1,5 +1,7 @@
 import { ChainJsonRpc } from '../helpers';
 
+const EIP155AccountsMethod = 'eth_accounts';
+
 const EIP155SigningMethods: string[] = [
   'eth_sendTransaction',
   'eth_signTransaction',
@@ -11,10 +13,11 @@ const EIP155SigningMethods: string[] = [
 export const EIP155JsonRpc: ChainJsonRpc = {
   routes: {
     http: ['eth_*'],
-    signer: ['eth_accounts', ...EIP155SigningMethods],
+    signer: [EIP155AccountsMethod, ...EIP155SigningMethods],
   },
-  auth: {
-    requiredApproval: EIP155SigningMethods,
+  wallet: {
+    accounts: EIP155AccountsMethod,
+    auth: EIP155SigningMethods,
   },
   schemas: {
     eth_accounts: {

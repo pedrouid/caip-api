@@ -15,8 +15,9 @@ export interface ChainConfig {
 }
 
 export interface ChainJsonRpc extends Required<BlockchainJsonRpcConfig> {
-  auth: {
-    requiredApproval: string[];
+  wallet: {
+    accounts: string;
+    auth: string[];
   };
 }
 export interface NamespaceConfig {
