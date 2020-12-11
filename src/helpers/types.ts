@@ -14,7 +14,11 @@ export interface ChainConfig {
   nativeAsset: AssetMetadata;
 }
 
-export type ChainJsonRpc = Required<BlockchainJsonRpcConfig>;
+export interface ChainJsonRpc extends Required<BlockchainJsonRpcConfig> {
+  auth: {
+    requiredApproval: string[];
+  };
+}
 export interface NamespaceConfig {
   [reference: string]: ChainConfig;
 }

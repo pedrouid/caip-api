@@ -1,19 +1,20 @@
 import { ChainJsonRpc } from '../helpers';
 
+const EIP155SigningMethods: string[] = [
+  'eth_sendTransaction',
+  'eth_signTransaction',
+  'eth_sign',
+  'eth_signTypedData',
+  'personal_sign',
+];
+
 export const EIP155JsonRpc: ChainJsonRpc = {
   routes: {
     http: ['eth_*'],
-    signer: [
-      'eth_sendTransaction',
-      'eth_signTransaction',
-      'eth_sign',
-      'eth_signTypedData',
-      'personal_sign',
-    ],
+    signer: ['eth_accounts', ...EIP155SigningMethods],
   },
-  state: {
-    chainId: 'eth_chainId',
-    accounts: 'eth_accounts',
+  auth: {
+    requiredApproval: EIP155SigningMethods,
   },
   schemas: {
     eth_accounts: {

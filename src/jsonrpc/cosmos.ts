@@ -5,9 +5,8 @@ export const CosmosJsonRpc: ChainJsonRpc = {
     http: [],
     signer: [],
   },
-  state: {
-    chainId: '',
-    accounts: '',
+  auth: {
+    requiredApproval: [],
   },
   schemas: {},
 };
