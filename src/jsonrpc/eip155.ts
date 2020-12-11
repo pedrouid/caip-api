@@ -1,4 +1,4 @@
-import { JsonRpcSchemas } from '@json-rpc-tools/utils';
+import { JsonRpcSchemas } from '@json-rpc-tools/types';
 
 export const EIP155JsonRpc: JsonRpcSchemas = {
   schemas: {

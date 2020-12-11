@@ -1,4 +1,4 @@
-import { JsonRpcSchemas } from '@json-rpc-tools/utils';
+import { JsonRpcSchemas } from '@json-rpc-tools/types';
 import { ChainID } from 'caip';
 
 import * as blockchain from '../';

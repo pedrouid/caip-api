@@ -1,5 +1,3 @@
-import { BlockchainJsonRpcConfig } from '@json-rpc-tools/utils';
-
 export interface AssetMetadata {
   symbol: string;
   name: string;
@@ -14,12 +12,6 @@ export interface ChainConfig {
   nativeAsset: AssetMetadata;
 }
 
-export interface ChainJsonRpc extends Required<BlockchainJsonRpcConfig> {
-  wallet: {
-    accounts: string;
-    auth: string[];
-  };
-}
 export interface NamespaceConfig {
   [reference: string]: ChainConfig;
 }

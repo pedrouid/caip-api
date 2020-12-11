@@ -1012,13 +1012,6 @@
   resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.5.1.tgz#5eec456b77497c55b0fffefdf8cc92ce9e2ff969"
   integrity sha512-nbuvu6zA4L/e/F2cGgcWdL9VuGeU1kA6iZSPByi/X3QlF63sKYgreMcbhqLMmXPqEbaH3UIG5+ldj/kq2CgFXQ==
 
-"@json-rpc-tools/utils@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@json-rpc-tools/utils/-/utils-1.5.1.tgz#558d274758b6b7b88e6161da0831b2b0e7c91e6d"
-  integrity sha512-uoZ8bo02wCmmDk/7e3XwzDfN1bVh+Ow/JDJ4erILC+qmFyCkhTzXcPzKoNZQM2QGzfuiFZT1l//wLdg9asyETg==
-  dependencies:
-    "@json-rpc-tools/types" "^1.5.1"
-
 "@rollup/plugin-commonjs@^11.0.0":
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-11.1.0.tgz#60636c7a722f54b41e419e1709df05c7234557ef"
