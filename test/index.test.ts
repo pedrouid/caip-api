@@ -31,34 +31,6 @@ describe('getChainConfig', () => {
   });
 });
 
-describe('getChainJsonRpc', () => {
-  it('Ethereum', async () => {
-    const jsonrpc = blockchain.getChainJsonRpc(TEST_ETHEREUM_CHAINID);
-    expect(jsonrpc).toBeTruthy();
-    expect(jsonrpc.routes.http).toEqual(['eth_*']);
-    expect(jsonrpc.routes.signer).toEqual([
-      'eth_accounts',
-      'eth_sendTransaction',
-      'eth_signTransaction',
-      'eth_sign',
-      'eth_signTypedData',
-      'personal_sign',
-    ]);
-  });
-  it('Cosmos', async () => {
-    const jsonrpc = blockchain.getChainJsonRpc(TEST_COSMOS_CHAINID);
-    expect(jsonrpc).toBeTruthy();
-    expect(jsonrpc.routes.http).toEqual([]);
-    expect(jsonrpc.routes.signer).toEqual([]);
-  });
-  it('Polkadot', async () => {
-    const jsonrpc = blockchain.getChainJsonRpc(TEST_POLKADOT_CHAINID);
-    expect(jsonrpc).toBeTruthy();
-    expect(jsonrpc.routes.http).toEqual([]);
-    expect(jsonrpc.routes.signer).toEqual([]);
-  });
-});
-
 describe('getSupportedChains', () => {
   it('All', async () => {
     const chains = blockchain.getSupportedChains();

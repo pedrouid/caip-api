@@ -1,13 +1,5 @@
-import { ChainJsonRpc } from '../helpers';
+import { JsonRpcSchemas } from '@json-rpc-tools/utils';
 
-export const PolkadotJsonRpc: ChainJsonRpc = {
-  routes: {
-    http: [],
-    signer: [],
-  },
-  wallet: {
-    accounts: '',
-    auth: [],
-  },
+export const PolkadotJsonRpc: JsonRpcSchemas = {
   schemas: {},
 };
