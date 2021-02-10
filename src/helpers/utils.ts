@@ -17,7 +17,7 @@ export function getNamespaceProperty<T = any>(
 }
 
 export function getChainJsonRpcSchemas(chainId: string): JsonRpcSchemaMap {
-  return getNamespaceProperty<JsonRpcSchemaMap>(chainId, 'jsonrpc');
+  return getNamespaceProperty<JsonRpcSchemaMap>(chainId, 'schemas');
 }
 
 export function getChainConfig(chainId: string): ChainConfig {

@@ -1,4 +1,5 @@
 import * as blockchain from '../src';
+import { getChainJsonRpcSchemas } from '../src';
 
 const TEST_ETHEREUM_CHAINID = 'eip155:1';
 const TEST_COSMOS_CHAINID = 'cosmos:cosmoshub-3';
@@ -28,6 +29,31 @@ describe('getChainConfig', () => {
     expect(chain.chainId).toEqual(TEST_POLKADOT_CHAINID);
     expect(chain.derivationPath).toEqual("m/44'/354'/0'/0");
     expect(chain.nativeAsset.symbol).toEqual('DOT');
+  });
+});
+
+describe('getChainJsonRpcSchemas', () => {
+  it('Ethereum', async () => {
+    const schemas = getChainJsonRpcSchemas('eip155:1');
+    expect(Object.keys(schemas)).toEqual([
+      'eth_chainId',
+      'eth_accounts',
+      'eth_sign',
+      'eth_signTypedData',
+      'eth_signTransaction',
+      'eth_sendTransaction',
+      'personal_sign',
+    ]);
+  });
+  it('Cosmos', async () => {
+    const schemas = getChainJsonRpcSchemas('cosmos:cosmoshub-3');
+    expect(Object.keys(schemas)).toEqual([]);
+  });
+  it('Polkadot', async () => {
+    const schemas = getChainJsonRpcSchemas(
+      'polkadot:91b171bb158e2d3848fa23a9f1c25182'
+    );
+    expect(Object.keys(schemas)).toEqual([]);
   });
 });
 
