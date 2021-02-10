@@ -1,4 +1,4 @@
-import { JsonRpcSchemas } from '@json-rpc-tools/types';
+import { JsonRpcSchemaMap } from '@json-rpc-tools/types';
 import { ChainID } from 'caip';
 
 import * as blockchain from '../';
@@ -16,8 +16,8 @@ export function getNamespaceProperty<T = any>(
   return res;
 }
 
-export function getChainJsonRpcSchemas(chainId: string): JsonRpcSchemas {
-  return getNamespaceProperty<JsonRpcSchemas>(chainId, 'jsonrpc');
+export function getChainJsonRpcSchemas(chainId: string): JsonRpcSchemaMap {
+  return getNamespaceProperty<JsonRpcSchemaMap>(chainId, 'jsonrpc');
 }
 
 export function getChainConfig(chainId: string): ChainConfig {
