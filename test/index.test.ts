@@ -66,13 +66,21 @@ describe('getSupportedChains', () => {
       'eip155:1',
       'eip155:5',
       'eip155:100',
+      'eip155:137',
+      'eip155:79377087078960',
       'polkadot:91b171bb158e2d3848fa23a9f1c25182',
       'polkadot:b0a8d493285c2df73290dfb7e61f870f',
     ]);
   });
   it('Ethereum', async () => {
     const chains = blockchain.getSupportedChains('eip155');
-    expect(Object.keys(chains)).toEqual(['eip155:1', 'eip155:5', 'eip155:100']);
+    expect(Object.keys(chains)).toEqual([
+      'eip155:1',
+      'eip155:5',
+      'eip155:100',
+      'eip155:137',
+      'eip155:79377087078960',
+    ]);
   });
   it('Cosmos', async () => {
     const chains = blockchain.getSupportedChains('cosmos');

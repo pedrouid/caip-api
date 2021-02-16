@@ -34,4 +34,26 @@ export const EIP155Config: NamespaceConfig = {
       decimals: '18',
     },
   },
+  '137': {
+    name: 'Matic Mainnet',
+    chainId: 'eip155:137',
+    rpcUrl: 'rpc-mainnet.matic.network',
+    derivationPath: "m/44'/60'/0'/0",
+    nativeAsset: {
+      name: 'Matic',
+      symbol: 'MATIC',
+      decimals: '18',
+    },
+  },
+  '79377087078960': {
+    name: 'Arbitrum Kovan',
+    chainId: 'eip155:79377087078960',
+    rpcUrl: 'kovan3.arbitrum.io/rpc',
+    derivationPath: "m/44'/60'/0'/0",
+    nativeAsset: {
+      symbol: 'ETH',
+      name: 'Ether',
+      decimals: '18',
+    },
+  },
 };
