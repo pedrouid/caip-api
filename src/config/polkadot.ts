@@ -1,4 +1,16 @@
-import { NamespaceConfig } from '../helpers';
+import { AssetMetadata, NamespaceConfig } from '../helpers';
+
+export const DOT: AssetMetadata = {
+  symbol: 'DOT',
+  name: 'DOT',
+  decimals: '18',
+};
+
+export const KSM: AssetMetadata = {
+  symbol: 'KSM',
+  name: 'KSM',
+  decimals: '18',
+};
 
 export const PolkadotConfig: NamespaceConfig = {
   // eslint-disable-next-line no-useless-computed-key
@@ -7,11 +19,7 @@ export const PolkadotConfig: NamespaceConfig = {
     chainId: 'polkadot:91b171bb158e2d3848fa23a9f1c25182',
     rpcUrl: 'rpc.polkadot.io',
     derivationPath: "m/44'/354'/0'/0",
-    nativeAsset: {
-      symbol: 'DOT',
-      name: 'DOT',
-      decimals: '18',
-    },
+    nativeAsset: DOT,
   },
   // eslint-disable-next-line no-useless-computed-key
   ['b0a8d493285c2df73290dfb7e61f870f']: {
@@ -19,10 +27,6 @@ export const PolkadotConfig: NamespaceConfig = {
     chainId: 'polkadot:b0a8d493285c2df73290dfb7e61f870f',
     rpcUrl: 'kusama-rpc.polkadot.io',
     derivationPath: "m/44'/434'/0'/0",
-    nativeAsset: {
-      symbol: 'KSM',
-      name: 'KSM',
-      decimals: '18',
-    },
+    nativeAsset: KSM,
   },
 };
