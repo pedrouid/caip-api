@@ -22,7 +22,7 @@ export const EIP155Config: NamespaceConfig = {
   '1': {
     name: 'Ethereum Mainnet',
     chainId: 'eip155:1',
-    rpcUrl: 'rpc.slock.it/mainnet',
+    rpcUrl: 'api.mycryptoapi.com/eth',
     testNet: false,
     derivationPath: "m/44'/60'/0'/0",
     nativeAsset: ETH,
@@ -30,7 +30,7 @@ export const EIP155Config: NamespaceConfig = {
   '5': {
     name: 'Ethereum Goerli',
     chainId: 'eip155:5',
-    rpcUrl: 'rpc.slock.it/goerli',
+    rpcUrl: 'rpc.goerli.mudit.blog',
     testNet: true,
     derivationPath: "m/44'/60'/0'/0",
     nativeAsset: ETH,
