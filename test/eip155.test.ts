@@ -13,6 +13,7 @@ describe('EIP155', () => {
     expect(chain.name).toEqual(TEST_EIP155_CHAIN.name);
     expect(chain.chainId).toEqual(TEST_EIP155_CHAIN.chainId);
     expect(chain.rpcUrl).toEqual(TEST_EIP155_CHAIN.rpcUrl);
+    expect(chain.testNet).toEqual(TEST_EIP155_CHAIN.testNet);
     expect(chain.derivationPath).toEqual(TEST_EIP155_CHAIN.derivationPath);
     expect(chain.nativeAsset).toEqual(TEST_EIP155_CHAIN.nativeAsset);
   });

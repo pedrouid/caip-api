@@ -2,6 +2,7 @@ export const TEST_COSMOS_CHAIN = {
   name: 'Cosmos Hub',
   chainId: 'cosmos:cosmoshub-4',
   rpcUrl: 'rpc.cosmos.network',
+  testNet: false,
   derivationPath: "m/44'/118'/0'/0",
   nativeAsset: { symbol: 'ATOM', name: 'Atom', decimals: '18' },
 };

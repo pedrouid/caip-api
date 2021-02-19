@@ -2,6 +2,7 @@ export const TEST_POLKADOT_CHAIN = {
   name: 'Polkadot',
   chainId: 'polkadot:91b171bb158e2d3848fa23a9f1c25182',
   rpcUrl: 'rpc.polkadot.io',
+  testNet: false,
   derivationPath: "m/44'/354'/0'/0",
   nativeAsset: { symbol: 'DOT', name: 'DOT', decimals: '18' },
 };

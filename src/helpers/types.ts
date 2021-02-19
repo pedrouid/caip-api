@@ -8,6 +8,7 @@ export interface ChainConfig {
   name: string;
   chainId: string;
   rpcUrl: string;
+  testNet: boolean;
   derivationPath: string;
   nativeAsset: AssetMetadata;
 }

@@ -13,6 +13,7 @@ describe('Polkadot', () => {
     expect(chain.name).toEqual(TEST_POLKADOT_CHAIN.name);
     expect(chain.chainId).toEqual(TEST_POLKADOT_CHAIN.chainId);
     expect(chain.rpcUrl).toEqual(TEST_POLKADOT_CHAIN.rpcUrl);
+    expect(chain.testNet).toEqual(TEST_POLKADOT_CHAIN.testNet);
     expect(chain.derivationPath).toEqual(TEST_POLKADOT_CHAIN.derivationPath);
     expect(chain.nativeAsset).toEqual(TEST_POLKADOT_CHAIN.nativeAsset);
   });

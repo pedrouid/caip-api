@@ -13,6 +13,7 @@ describe('Cosmos', () => {
     expect(chain.name).toEqual(TEST_COSMOS_CHAIN.name);
     expect(chain.chainId).toEqual(TEST_COSMOS_CHAIN.chainId);
     expect(chain.rpcUrl).toEqual(TEST_COSMOS_CHAIN.rpcUrl);
+    expect(chain.testNet).toEqual(TEST_COSMOS_CHAIN.testNet);
     expect(chain.derivationPath).toEqual(TEST_COSMOS_CHAIN.derivationPath);
     expect(chain.nativeAsset).toEqual(TEST_COSMOS_CHAIN.nativeAsset);
   });
