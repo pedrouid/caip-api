@@ -1062,10 +1062,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@json-rpc-tools/types@^1.6.1":
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-1.7.6.tgz#5abd5fde01364a130c46093b501715bcce5bdc0e"
-  integrity sha512-nDSqmyRNEqEK9TZHtM15uNnDljczhCUdBmRhpNZ95bIPKEDQ+nTDmGMFd2lLin3upc5h2VVVd9tkTDdbXUhDIQ==
+"@json-rpc-tools/types@^2.0.0-beta.0":
+  version "2.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@json-rpc-tools/types/-/types-2.0.0-beta.9.tgz#10ab0d5867392fd603315880d16423f018975a14"
+  integrity sha512-AZr9Tz9vFNOnHbLdNFHlynnta1bb9qyEdtoUuT/I9HlHqnkRKjqowZFGvclRUaaNLbJ8ioLFBavxAkJav1efwA==
   dependencies:
     keyvaluestorage-interface "^1.0.0"
 
