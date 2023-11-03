@@ -17,6 +17,8 @@ export const EIP155_SUPPORTED_CHAINS = [
   'eip155:100',
   'eip155:137',
   'eip155:420',
+  'eip155:1001',
+  'eip155:8217',
   'eip155:80001',
   'eip155:79377087078960',
 ];

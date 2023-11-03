@@ -18,6 +18,12 @@ export const MATIC: AssetMetadata = {
   decimals: '18',
 };
 
+export const KLAY: AssetMetadata = {
+  symbol: 'KLAY',
+  name: 'Klay',
+  decimals: '18',
+};
+
 export const EIP155Config: NamespaceConfig = {
   '1': {
     name: 'Ethereum Mainnet',
@@ -74,6 +80,22 @@ export const EIP155Config: NamespaceConfig = {
     testNet: true,
     derivationPath: "m/44'/60'/0'/0",
     nativeAsset: ETH,
+  },
+  '1001': {
+    name: 'Klaytn Testnet',
+    chainId: 'eip155:1001',
+    rpcUrl: 'public-en-baobab.klaytn.net',
+    testNet: true,
+    derivationPath: "m/44'/60'/0'/0",
+    nativeAsset: KLAY,
+  },
+  '8217': {
+    name: 'Klaytn Mainnet',
+    chainId: 'eip155:8217',
+    rpcUrl: 'public-en-cypress.klaytn.net',
+    testNet: false,
+    derivationPath: "m/44'/60'/0'/0",
+    nativeAsset: KLAY,
   },
   '80001': {
     name: 'Matic Mumbai',
